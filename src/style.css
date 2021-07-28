@@ -10,4 +10,19 @@ body {
 #content {
   text-align: center;
   color: white;
+  margin: 20px;
+}
+h1 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1.1em;
+}
+div {
+  margin: 10px 0;
+}
+#assortment img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
