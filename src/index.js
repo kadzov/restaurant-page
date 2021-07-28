@@ -1,17 +1,22 @@
 import './style.css';
 
 import logo from './images/logo.jpg';
-import capricciosa from './images/capricciosa.jpg';
-import hawaiian from './images/hawaiian.jpg';
-import margherita from './images/margherita.jpg';
-import neapolitan from './images/neapolitan.jpg';
-import pepperoni from './images/pepperoni.jpg';
-import quattroFormaggi from './images/quattro-formaggi.jpg';
+import pizzeria from './images/pizzeria.jpg';
+import capricciosa from './images/pizza/capricciosa.jpg';
+import hawaiian from './images/pizza/hawaiian.jpg';
+import margherita from './images/pizza/margherita.jpg';
+import neapolitan from './images/pizza/neapolitan.jpg';
+import pepperoni from './images/pizza/pepperoni.jpg';
+import quattroFormaggi from './images/pizza/quattro-formaggi.jpg';
 
 (() => {
   const img = new Image();
   img.src = logo;
   content.appendChild(img);
+  const img2 = new Image();
+  img2.src = pizzeria;
+  img2.id = 'pizzeria'
+  content.appendChild(img2);
   const header = document.createElement('h1');
   header.textContent = 'THE BEST NEW YORK STYLE PIZZA AROUND!';
   content.appendChild(header);
