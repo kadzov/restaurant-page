@@ -10,10 +10,13 @@ body {
 #content {
   text-align: center;
   color: white;
+  margin: 0 20px;
+}
+#logo {
   margin: 20px;
 }
 #pizzeria {
-  width: 100%;
+  max-width: 100%;
 }
 h1 {
   font-size: 1.5em;

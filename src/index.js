@@ -12,6 +12,7 @@ import quattroFormaggi from './images/pizza/quattro-formaggi.jpg';
 (() => {
   const img = new Image();
   img.src = logo;
+  img.id = 'logo'
   content.appendChild(img);
   const img2 = new Image();
   img2.src = pizzeria;
