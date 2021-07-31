@@ -19,6 +19,7 @@ body {
   border-radius: 10px;
 }
 #logo {
+  max-width: 100%;
   margin-bottom: 20px;
 }
 nav {
