@@ -1,0 +1,12 @@
+#pizzeria {
+  max-width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 1.3em;
+  text-align: left;
+}
+p {
+  font-size: 1.2em;
+}
