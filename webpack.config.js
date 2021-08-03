@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: 'production',
   entry: [
@@ -9,6 +11,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: __dirname + '/dist',
+    clean: true,
   },
   module: {
     rules: [
@@ -22,4 +25,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Pizzeria',
+      template: 'src/index.html'
+    }),
+  ],
 };
