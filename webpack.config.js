@@ -2,14 +2,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: [
-    './src/index.js',
-    './src/home.js',
-    './src/menu.js',
-    './src/location.js'
-  ],
+  entry: {
+    index: './src/js/index.js',
+    home: './src/js/home.js',
+    menu: './src/js/menu.js',
+    location: './src/js/location.js'
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: __dirname + '/dist',
     clean: true,
   },
@@ -27,8 +27,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Pizzeria',
-      template: 'src/index.html'
+      template: 'src/template.html',
     }),
   ],
 };
