@@ -2,14 +2,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
+  context: __dirname + '/src/js',
   entry: {
-    index: './src/js/index.js',
-    home: './src/js/home.js',
-    menu: './src/js/menu.js',
-    location: './src/js/location.js'
+    index: './index.js',
+    home: './home.js',
+    menu: './menu.js',
+    location: './location.js'
   },
   output: {
-    filename: '[name].js',
+    filename: 'js/[name].[contenthash].js',
     path: __dirname + '/dist',
     clean: true,
   },
@@ -22,12 +23,15 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name].[hash][ext]',
+        },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/template.html',
+      template: '../template.html',
     }),
   ],
 };
