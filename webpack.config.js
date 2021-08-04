@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'production',
   resolve: {
-    extensions: ['.css', '.png'],
+    extensions: ['.css', '.jpg'],
   },
   context: __dirname + '/src/js',
   entry: {
@@ -24,7 +24,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.jpg$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name].[hash][ext]',
