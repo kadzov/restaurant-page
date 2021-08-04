@@ -1,10 +1,10 @@
 // import '../css/menu';
-// import capricciosa from '../assets/pizza/capricciosa';
-// import hawaiian from '../assets/pizza/hawaiian';
-// import margherita from '../assets/pizza/margherita';
-// import neapolitan from '../assets/pizza/neapolitan';
-// import pepperoni from '../assets/pizza/pepperoni';
-// import quattroFormaggi from '../assets/pizza/quattro-formaggi';
+// import capricciosa from '../assets/capricciosa';
+// import hawaiian from '../assets/hawaiian';
+// import margherita from '../assets/margherita';
+// import neapolitan from '../assets/neapolitan';
+// import pepperoni from '../assets/pepperoni';
+// import quattroFormaggi from '../assets/quattro-formaggi';
 
 // //check other projects from odin and ffc for grid
 
