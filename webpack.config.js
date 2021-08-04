@@ -2,6 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
+  resolve: {
+    extensions: ['.css', '.png'],
+  },
   context: __dirname + '/src/js',
   entry: {
     index: './index.js',
