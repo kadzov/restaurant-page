@@ -1,4 +1,4 @@
-// import '../css/menu';
+// import '../scss/menu';
 // import capricciosa from '../assets/capricciosa';
 // import hawaiian from '../assets/hawaiian';
 // import margherita from '../assets/margherita';

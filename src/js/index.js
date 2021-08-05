@@ -1,4 +1,4 @@
-import '../css/index';
+import '../scss/index';
 import logo from '../assets/logo';
 
 (() => {

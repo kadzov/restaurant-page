@@ -1,11 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   mode: 'production',
   resolve: {
-    extensions: ['.css', '.jpg'],
+    extensions: ['.scss', '.jpg'],
   },
   context: __dirname + '/src/js',
   entry: {
@@ -22,8 +21,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        test: /\.scss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.jpg$/i,
@@ -42,10 +45,4 @@ module.exports = {
       filename: 'css/[name].[contenthash].css',
     }),
   ],
-  optimization: {
-    minimizer: [
-      `...`,
-      new CssMinimizerPlugin(),
-    ],
-  },
 };

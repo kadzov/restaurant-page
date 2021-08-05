@@ -1,4 +1,4 @@
-import '../css/home';
+import '../scss/home';
 import pizzeria from '../assets/pizzeria';
 
 (() => {
