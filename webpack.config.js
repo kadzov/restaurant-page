@@ -7,6 +7,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.scss', '.jpg'],
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   context: __dirname + '/src/js',
   entry: {
     index: './index.js',
