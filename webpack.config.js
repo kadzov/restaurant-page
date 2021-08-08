@@ -17,7 +17,7 @@ module.exports = {
     index: './index.js',
     home: './home.js',
     menu: './menu.js',
-    location: './location.js'
+    location: './location.js',
   },
   output: {
     filename: 'js/[name].[contenthash].js',
