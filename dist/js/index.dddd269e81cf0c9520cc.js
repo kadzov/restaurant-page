@@ -9,7 +9,7 @@
  */
 (self["webpackChunk"] = self["webpackChunk"] || []).push([["index"],{
 
-/***/ "../scss/index.scss":
+/***/ 470:
 /*!**************************!*\
   !*** ../scss/index.scss ***!
   \**************************/
@@ -19,17 +19,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./index.js":
+/***/ 10:
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/index */ \"../scss/index.scss\");\n/* harmony import */ var _assets_logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/logo */ \"../assets/logo.jpg\");\n\r\n\r\n\r\n(() => {\r\n  const img = new Image();\r\n  img.src = _assets_logo__WEBPACK_IMPORTED_MODULE_1__;\r\n  img.id = 'logo';\r\n  content.appendChild(img);\r\n})();\r\n\r\n(() => {\r\n  const nav = document.createElement('nav');\r\n\r\n  const home = document.createElement('a');\r\n  home.textContent = 'HOME';\r\n  nav.appendChild(home);\r\n\r\n  const menu = document.createElement('a');\r\n  menu.textContent = 'MENU';\r\n  nav.appendChild(menu);\r\n\r\n  const location = document.createElement('a');\r\n  location.textContent = 'LOCATION';\r\n  nav.appendChild(location);\r\n\r\n  content.appendChild(nav);\r\n})();\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/index */ 470);\n/* harmony import */ var _assets_logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/logo */ 3);\n\r\n\r\n\r\n(() => {\r\n  const img = new Image();\r\n  img.src = _assets_logo__WEBPACK_IMPORTED_MODULE_1__;\r\n  img.id = 'logo';\r\n  content.appendChild(img);\r\n})();\r\n\r\n(() => {\r\n  const nav = document.createElement('nav');\r\n\r\n  const home = document.createElement('a');\r\n  home.textContent = 'HOME';\r\n  nav.appendChild(home);\r\n\r\n  const menu = document.createElement('a');\r\n  menu.textContent = 'MENU';\r\n  nav.appendChild(menu);\r\n\r\n  const location = document.createElement('a');\r\n  location.textContent = 'LOCATION';\r\n  nav.appendChild(location);\r\n\r\n  content.appendChild(nav);\r\n})();\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
-/***/ "../assets/logo.jpg":
+/***/ 3:
 /*!**************************!*\
   !*** ../assets/logo.jpg ***!
   \**************************/
@@ -42,6 +42,6 @@ eval("module.exports = __webpack_require__.p + \"assets/logo.8196a52f7a023df646c
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./index.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__(10));
 /******/ }
 ]);

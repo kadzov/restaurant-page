@@ -6,19 +6,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.scss', '.jpg'],
   },
-  optimization: {
-    runtimeChunk: 'single',
-    // splitChunks: {
-    //   chunks: 'all',
-    //   cacheGroups: {
-    //     vendor: {
-    //       test: /[\\/]node_modules[\\/]/,
-    //       name: 'vendors',
-    //       chunks: 'all',
-    //     },
-    //   },
-    // },
-  },
   context: __dirname + '/src/js',
   entry: {
     index: './index.js',
@@ -58,4 +45,18 @@ module.exports = {
       filename: 'css/[name].[contenthash].css',
     }),
   ],
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
 };

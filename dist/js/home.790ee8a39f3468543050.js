@@ -9,7 +9,7 @@
  */
 (self["webpackChunk"] = self["webpackChunk"] || []).push([["home"],{
 
-/***/ "../scss/home.scss":
+/***/ 386:
 /*!*************************!*\
   !*** ../scss/home.scss ***!
   \*************************/
@@ -19,17 +19,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./home.js":
+/***/ 91:
 /*!*****************!*\
   !*** ./home.js ***!
   \*****************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/home */ \"../scss/home.scss\");\n/* harmony import */ var _assets_pizzeria__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/pizzeria */ \"../assets/pizzeria.jpg\");\n\r\n\r\n\r\n(() => {\r\n  const img = new Image();\r\n  img.src = _assets_pizzeria__WEBPACK_IMPORTED_MODULE_1__;\r\n  img.id = 'pizzeria';\r\n  content.appendChild(img);\r\n})();\r\n\r\n(() => {\r\n  const h1 = document.createElement('h1');\r\n  h1.textContent = 'THE BEST NEW YORK STYLE PIZZA AROUND!';\r\n  content.appendChild(h1);\r\n})();\r\n\r\n(() => {\r\n  const p = document.createElement('p');\r\n  p.textContent = 'The Russo family has been serving up the best New York Style Pizza and authentic Italian cuisine for years. Our recipes have been passed down from generation to generation all the way from Naples and Sicily. Russo’s mission is to serve New York style pizza and authentic Italian food worldwide so that no matter your location, you’ll be able to enjoy the delicious, traditional Russo family recipes.';\r\n  content.appendChild(p);\r\n})();\r\n\n\n//# sourceURL=webpack:///./home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/home */ 386);\n/* harmony import */ var _assets_pizzeria__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/pizzeria */ 58);\n\r\n\r\n\r\n(() => {\r\n  const img = new Image();\r\n  img.src = _assets_pizzeria__WEBPACK_IMPORTED_MODULE_1__;\r\n  img.id = 'pizzeria';\r\n  content.appendChild(img);\r\n})();\r\n\r\n(() => {\r\n  const h1 = document.createElement('h1');\r\n  h1.textContent = 'THE BEST NEW YORK STYLE PIZZA AROUND!';\r\n  content.appendChild(h1);\r\n})();\r\n\r\n(() => {\r\n  const p = document.createElement('p');\r\n  p.textContent = 'The Russo family has been serving up the best New York Style Pizza and authentic Italian cuisine for years. Our recipes have been passed down from generation to generation all the way from Naples and Sicily. Russo’s mission is to serve New York style pizza and authentic Italian food worldwide so that no matter your location, you’ll be able to enjoy the delicious, traditional Russo family recipes.';\r\n  content.appendChild(p);\r\n})();\r\n\n\n//# sourceURL=webpack:///./home.js?");
 
 /***/ }),
 
-/***/ "../assets/pizzeria.jpg":
+/***/ 58:
 /*!******************************!*\
   !*** ../assets/pizzeria.jpg ***!
   \******************************/
@@ -42,6 +42,6 @@ eval("module.exports = __webpack_require__.p + \"assets/pizzeria.44fe0d42bc20048
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./home.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__(91));
 /******/ }
 ]);

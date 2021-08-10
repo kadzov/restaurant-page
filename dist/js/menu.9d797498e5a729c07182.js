@@ -8,7 +8,7 @@
  */
 (self["webpackChunk"] = self["webpackChunk"] || []).push([["menu"],{
 
-/***/ "./menu.js":
+/***/ 316:
 /*!*****************!*\
   !*** ./menu.js ***!
   \*****************/
@@ -21,6 +21,6 @@ eval("// import '../scss/menu';\r\n// import capricciosa from '../assets/capricc
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./menu.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__(316));
 /******/ }
 ]);
