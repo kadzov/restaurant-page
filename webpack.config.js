@@ -7,10 +7,17 @@ module.exports = {
     extensions: ['.js', '.scss', '.jpg'],
   },
   optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
     runtimeChunk: 'single',
+    // splitChunks: {
+    //   chunks: 'all',
+    //   cacheGroups: {
+    //     vendor: {
+    //       test: /[\\/]node_modules[\\/]/,
+    //       name: 'vendors',
+    //       chunks: 'all',
+    //     },
+    //   },
+    // },
   },
   context: __dirname + '/src/js',
   entry: {
