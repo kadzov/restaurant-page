@@ -1,19 +1,23 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  context: __dirname + '/src/js',
   entry: {
-    index: './index.js',
-    home: './home.js',
-    menu: './menu.js',
-    location: './location.js',
+    index: './index',
+    home: './home',
+    menu: './menu',
+    location: './location',
+  },
+  context: __dirname + '/src/js',
+  resolve: {
+    extensions: [
+      '.jpg',
+      '.js',
+      '.scss',
+      '.html',
+    ],
   },
   output: {
-    path: __dirname + '/dist',
     clean: true,
-  },
-  resolve: {
-    extensions: ['.js', '.scss', '.jpg'],
   },
   module: {
     rules: [
@@ -25,7 +29,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: '../template.html',
+      template: '../index',
     }),
   ],
 };
