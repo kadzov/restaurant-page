@@ -6,8 +6,16 @@ module.exports = merge(common, {
   devServer: {
     hot: true,
   },
+  output: {
+    filename: 'js/[name].js',
+  },
   module: {
     rules: [
+      {
+        generator: {
+          filename: 'assets/[name][ext]',
+        },
+      },
       {
         test: /\.scss$/i,
         use: [

@@ -5,8 +5,16 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
+  output: {
+    filename: 'js/[name].[contenthash].js',
+  },
   module: {
     rules: [
+      {
+        generator: {
+          filename: 'assets/[name].[hash][ext]',
+        },
+      },
       {
         test: /\.scss$/i,
         use: [
@@ -17,6 +25,11 @@ module.exports = merge(common, {
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[contenthash].css',
+    }),
+  ],
   optimization: {
     usedExports: true,
     moduleIds: 'deterministic',

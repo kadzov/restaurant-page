@@ -1,9 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  resolve: {
-    extensions: ['.js', '.scss', '.jpg'],
-  },
   context: __dirname + '/src/js',
   entry: {
     index: './index.js',
@@ -12,18 +9,17 @@ module.exports = {
     location: './location.js',
   },
   output: {
-    filename: 'js/[name].[contenthash].js',
     path: __dirname + '/dist',
     clean: true,
+  },
+  resolve: {
+    extensions: ['.js', '.scss', '.jpg'],
   },
   module: {
     rules: [
       {
         test: /\.jpg$/i,
         type: 'asset/resource',
-        generator: {
-          filename: 'assets/[name].[hash][ext]',
-        },
       },
     ],
   },
