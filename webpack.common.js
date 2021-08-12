@@ -1,8 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: 'development',
   resolve: {
     extensions: ['.js', '.scss', '.jpg'],
   },
@@ -21,14 +19,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
         test: /\.jpg$/i,
         type: 'asset/resource',
         generator: {
@@ -41,22 +31,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: '../template.html',
     }),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].[contenthash].css',
-    }),
   ],
-  optimization: {
-    moduleIds: 'deterministic',
-    runtimeChunk: 'single',
-    splitChunks: {
-      chunks: 'all',
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
-  },
 };
