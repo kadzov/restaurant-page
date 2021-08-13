@@ -3,9 +3,6 @@ const common = require('./webpack.common');
 
 module.exports = merge(common, {
   mode: 'development',
-  devServer: {
-    hot: true
-  },
   output: {
     filename: 'js/[name].js',
     assetModuleFilename: 'assets/[name][ext]'
@@ -21,5 +18,8 @@ module.exports = merge(common, {
         ]
       }
     ]
+  },
+  devServer: {
+    hot: true
   }
 });

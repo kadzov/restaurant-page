@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
   mode: 'production',
-  devtool: 'source-map',
   output: {
     filename: 'js/[name].[contenthash].js',
     assetModuleFilename: 'assets/[name].[hash][ext]'
@@ -37,18 +36,8 @@ module.exports = merge(common, {
     })
   ],
   optimization: {
-    usedExports: true,
-    moduleIds: 'deterministic',
-    runtimeChunk: 'single',
     splitChunks: {
       chunks: 'all',
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      }
-    }
+    },
   }
 });

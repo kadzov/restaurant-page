@@ -7,13 +7,6 @@ module.exports = {
     menu: './menu/menu',
     location: './location/location'
   },
-  context: __dirname + '/src',
-  resolve: {
-    extensions: ['.jpg', '.js', '.scss', '.html']
-  },
-  output: {
-    clean: true
-  },
   module: {
     rules: [
       {
@@ -26,5 +19,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index'
     })
-  ]
+  ],
+  context: __dirname + '/src',
+  resolve: {
+    extensions: ['.jpg', '.js', '.scss', '.html']
+  },
+  output: {
+    clean: true
+  }
 };
