@@ -2,12 +2,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './index',
-    home: './home',
-    menu: './menu',
-    location: './location',
+    index: './index/index',
+    home: './home/home',
+    menu: './menu/menu',
+    location: './location/location',
   },
-  context: __dirname + '/src/js',
+  context: __dirname + '/src',
   resolve: {
     extensions: [
       '.jpg',
@@ -29,7 +29,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: '../index',
+      template: './index',
     }),
   ],
 };

@@ -1,5 +1,5 @@
-import '../scss/index';
-import logo from '../assets/logo';
+import './index';
+import logo from './logo';
 
 (() => {
   const img = new Image();

@@ -1,5 +1,5 @@
-import '../scss/home';
-import pizzeria from '../assets/pizzeria';
+import './home';
+import pizzeria from './pizzeria';
 
 (() => {
   const img = new Image();
