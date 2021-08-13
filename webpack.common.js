@@ -9,12 +9,7 @@ module.exports = {
   },
   context: __dirname + '/src',
   resolve: {
-    extensions: [
-      '.jpg',
-      '.js',
-      '.scss',
-      '.html'
-    ]
+    extensions: ['.jpg', '.js', '.scss', '.html']
   },
   output: {
     clean: true
@@ -22,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jpg$/i,
+        test: /\.jpg$/,
         type: 'asset/resource'
       }
     ]

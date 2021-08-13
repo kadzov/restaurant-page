@@ -12,7 +12,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.scss$/i,
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
@@ -20,7 +20,7 @@ module.exports = merge(common, {
         ]
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
