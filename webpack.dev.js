@@ -8,14 +8,10 @@ module.exports = merge(common, {
   },
   output: {
     filename: 'js/[name].js',
+    assetModuleFilename: 'assets/[name][ext]'
   },
   module: {
     rules: [
-      {
-        generator: {
-          filename: 'assets/[name][ext]',
-        },
-      },
       {
         test: /\.scss$/i,
         use: [

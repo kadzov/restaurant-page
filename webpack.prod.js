@@ -7,14 +7,10 @@ module.exports = merge(common, {
   devtool: 'source-map',
   output: {
     filename: 'js/[name].[contenthash].js',
+    assetModuleFilename: 'assets/[name].[hash][ext]'
   },
   module: {
     rules: [
-      {
-        generator: {
-          filename: 'assets/[name].[hash][ext]',
-        },
-      },
       {
         test: /\.scss$/i,
         use: [
