@@ -5,7 +5,7 @@ module.exports = {
     index: './index/index',
     home: './home/home',
     menu: './menu/menu',
-    location: './location/location',
+    location: './location/location'
   },
   context: __dirname + '/src',
   resolve: {
@@ -13,23 +13,23 @@ module.exports = {
       '.jpg',
       '.js',
       '.scss',
-      '.html',
-    ],
+      '.html'
+    ]
   },
   output: {
-    clean: true,
+    clean: true
   },
   module: {
     rules: [
       {
         test: /\.jpg$/i,
-        type: 'asset/resource',
-      },
-    ],
+        type: 'asset/resource'
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index',
-    }),
-  ],
+      template: './index'
+    })
+  ]
 };

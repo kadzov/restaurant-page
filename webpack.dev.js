@@ -4,7 +4,7 @@ const common = require('./webpack.common');
 module.exports = merge(common, {
   mode: 'development',
   devServer: {
-    hot: true,
+    hot: true
   },
   output: {
     filename: 'js/[name].js',
@@ -17,9 +17,9 @@ module.exports = merge(common, {
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader',
-        ],
-      },
-    ],
-  },
+          'sass-loader'
+        ]
+      }
+    ]
+  }
 });

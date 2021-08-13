@@ -16,15 +16,25 @@ module.exports = merge(common, {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
-    ],
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[contenthash].css',
-    }),
+      filename: 'css/[name].[contenthash].css'
+    })
   ],
   optimization: {
     usedExports: true,
@@ -36,9 +46,9 @@ module.exports = merge(common, {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all',
-        },
-      },
-    },
-  },
+          chunks: 'all'
+        }
+      }
+    }
+  }
 });
