@@ -39,7 +39,7 @@ module.exports = merge(common, {
   optimization: {
     usedExports: true,
     moduleIds: 'deterministic',
-    runtimeChunk: 'multiple',
+    runtimeChunk: 'single',
     splitChunks: {
       chunks: 'all',
       cacheGroups: {
