@@ -16,11 +16,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+    new HtmlWebpackPlugin({ template: './src/index.html' })
   ],
-  output: {
-    clean: true
-  }
+  output: { clean: true }
 };
