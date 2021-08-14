@@ -2,10 +2,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './index/index.js',
-    home: './home/home.js',
-    menu: './menu/menu.js',
-    location: './location/location.js'
+    index: './src/index/index.js',
+    home: './src/home/home.js',
+    menu: './src/menu/menu.js',
+    location: './src/location/location.js'
   },
   module: {
     rules: [
@@ -17,10 +17,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html'
+      template: './src/index.html'
     })
   ],
-  context: __dirname + '/src',
   output: {
     clean: true
   }
