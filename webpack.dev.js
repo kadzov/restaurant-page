@@ -1,12 +1,9 @@
 const { merge } = require('webpack-merge');
-const common = require('./webpack.common');
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'development',
-  output: {
-    filename: 'scripts/[name].js',
-    assetModuleFilename: 'assets/[name][ext]'
-  },
+  devServer: { hot: true },
   module: {
     rules: [
       {
@@ -14,6 +11,5 @@ module.exports = merge(common, {
         use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
-  },
-  devServer: { hot: true }
+  }
 });

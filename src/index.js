@@ -1,5 +1,5 @@
 import './index.scss';
-import logo from './logo.jpg';
+import logo from './images/logo.jpg';
 
 (() => {
   const img = new Image();
