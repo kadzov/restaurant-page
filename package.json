@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch --config webpack.dev.js",
-    "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "p": "webpack --mode production",
+    "d": "webpack --mode development",
+    "start": "webpack serve --open --mode development"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,6 @@
   },
   "homepage": "https://github.com/kadzov/restaurant-page#readme",
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.0",
@@ -32,8 +29,7 @@
     "style-loader": "^3.2.1",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.8.0"
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {}
 }
