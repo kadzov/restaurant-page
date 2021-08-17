@@ -6,7 +6,7 @@ const config = {
   plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
   module: {
     rules: [
-      { test: /\.scss/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.scss/, use: ['css-loader', 'sass-loader'] },
       { test: /\.jpg/, type: 'asset/resource' }
     ]
   }
@@ -15,11 +15,14 @@ const config = {
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     devServer = { hot: true };
-  } else if (argv.mode === 'production') {
+    config.module.rules[0].use.unshift('style-loader');
+  }
+  if (argv.mode === 'production') {
     config.optimization = { splitChunks: { chunks: 'all' } };
     config.output.filename = '[contenthash].js';
     config.plugins.push
       (new MiniCssExtractPlugin({ filename: '[contenthash].css' }));
-    config.module.rules[0].use[0] = MiniCssExtractPlugin.loader;
-  } return config;
+    config.module.rules[0].use.unshift(MiniCssExtractPlugin.loader);
+  }
+  return config;
 };
