@@ -14,7 +14,7 @@ const config = {
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
-    devServer = { hot: true };
+    config.devServer = { hot: true };
     config.module.rules[0].use.unshift('style-loader');
   } else {
     config.optimization = { splitChunks: { chunks: 'all' } };
