@@ -16,13 +16,11 @@ module.exports = (env, argv) => {
   if (argv.mode === 'development') {
     devServer = { hot: true };
     config.module.rules[0].use.unshift('style-loader');
-  }
-  if (argv.mode === 'production') {
+  } else {
     config.optimization = { splitChunks: { chunks: 'all' } };
     config.output.filename = '[contenthash].js';
     config.plugins.push
       (new MiniCssExtractPlugin({ filename: '[contenthash].css' }));
     config.module.rules[0].use.unshift(MiniCssExtractPlugin.loader);
-  }
-  return config;
+  } return config;
 };
