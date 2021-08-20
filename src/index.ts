@@ -5,7 +5,7 @@ import logo from './images/logo.jpg';
   const img = new Image();
   img.src = logo;
   img.id = 'logo';
-  content.appendChild(img);
+  document.querySelector('#content').appendChild(img);
 })();
 
 (() => {
@@ -23,5 +23,5 @@ import logo from './images/logo.jpg';
   location.textContent = 'LOCATION';
   nav.appendChild(location);
 
-  content.appendChild(nav);
+  document.querySelector('#content').appendChild(nav);
 })();
