@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = {
   mode: 'development',
   entry: './src/index.ts',
-  output: { filename: '[name].js', clean: true },
+  output: { clean: true },
   devServer: { hot: true },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/index.html' }),
@@ -26,5 +26,5 @@ module.exports = env => {
     config.optimization = { splitChunks: { chunks: 'all' } };
     config.module.rules[1].use[0] = MiniCssExtractPlugin.loader;
   }
-  return config
+  return config;
 };
