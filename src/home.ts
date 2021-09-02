@@ -4,6 +4,7 @@ export { home };
 
 const home = () => {
   const div = document.createElement('div');
+  div.id = 'home';
 
   const img = new Image();
   img.src = Pizzeria;
