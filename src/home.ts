@@ -1,12 +1,12 @@
 import './home.scss';
-import pizzeria from './images/pizzeria.jpg';
+import Pizzeria from './images/pizzeria.jpg';
 export { home };
 
 const home = () => {
   const div = document.createElement('div');
 
   const img = new Image();
-  img.src = pizzeria;
+  img.src = Pizzeria;
   img.id = 'pizzeria';
   div.appendChild(img);
 
