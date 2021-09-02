@@ -13,7 +13,6 @@ const menu = () => {
 
   const capricciosa = () => {
     const section = document.createElement('section');
-    div.appendChild(section);
 
     const h2 = document.createElement('h2');
     h2.textContent = 'Capricciosa';
@@ -23,73 +22,84 @@ const menu = () => {
     img.src = Capricciosa;
     section.appendChild(img);
 
-    return div;
+    return section;
   };
+  div.appendChild(capricciosa());
 
-  return capricciosa();
+  const hawaiian = () => {
+    const section = document.createElement('section');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Hawaiian';
+    section.appendChild(h2);
+
+    const img = new Image();
+    img.src = Hawaiian;
+    section.appendChild(img);
+
+    return section;
+  };
+  div.appendChild(hawaiian());
+
+  const margherita = () => {
+    const section = document.createElement('section');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Margherita';
+    section.appendChild(h2);
+
+    const img = new Image();
+    img.src = Margherita;
+    section.appendChild(img);
+
+    return section;
+  };
+  div.appendChild(margherita());
+
+  const neapolitan = () => {
+    const section = document.createElement('section');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Neapolitan';
+    section.appendChild(h2);
+
+    const img = new Image();
+    img.src = Neapolitan;
+    section.appendChild(img);
+
+    return section;
+  };
+  div.appendChild(neapolitan());
+
+  const pepperoni = () => {
+    const section = document.createElement('section');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Pepperoni';
+    section.appendChild(h2);
+
+    const img = new Image();
+    img.src = Pepperoni;
+    section.appendChild(img);
+
+    return section;
+  };
+  div.appendChild(pepperoni());
+
+  const quattroFormaggi = () => {
+    const section = document.createElement('section');
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'QuattroFormaggi';
+    section.appendChild(h2);
+
+    const img = new Image();
+    img.src = QuattroFormaggi;
+    section.appendChild(img);
+
+    return section;
+  };
+  div.appendChild(quattroFormaggi());
+
+  return div;
 };
-
-// (() => {
-//   const div = document.createElement('div');
-//   content.appendChild(div);
-
-//   const h2 = document.createElement('h2');
-//   h2.textContent = 'Hawaiian';
-//   div.appendChild(h2);
-
-//   const img = new Image();
-//   img.src = hawaiian;
-//   div.appendChild(img);
-// })();
-
-// (() => {
-//   const div = document.createElement('div');
-//   content.appendChild(div);
-
-//   const h2 = document.createElement('h2');
-//   h2.textContent = 'Margherita';
-//   div.appendChild(h2);
-
-//   const img = new Image();
-//   img.src = margherita;
-//   div.appendChild(img);
-// })();
-
-// (() => {
-//   const div = document.createElement('div');
-//   content.appendChild(div);
-
-//   const h2 = document.createElement('h2');
-//   h2.textContent = 'Neapolitan';
-//   div.appendChild(h2);
-
-//   const img = new Image();
-//   img.src = neapolitan;
-//   div.appendChild(img);
-// })();
-
-// (() => {
-//   const div = document.createElement('div');
-//   content.appendChild(div);
-
-//   const h2 = document.createElement('h2');
-//   h2.textContent = 'Pepperoni';
-//   div.appendChild(h2);
-
-//   const img = new Image();
-//   img.src = pepperoni;
-//   div.appendChild(img);
-// })();
-
-// (() => {
-//   const div = document.createElement('div');
-//   content.appendChild(div);
-
-//   const h2 = document.createElement('h2');
-//   h2.textContent = 'Quattro Formaggi';
-//   div.appendChild(h2);
-
-//   const img = new Image();
-//   img.src = quattroFormaggi;
-//   div.appendChild(img);
-// })();
