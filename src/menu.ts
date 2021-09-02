@@ -40,7 +40,6 @@ const menu = () => {
     return section;
   };
   div.appendChild(hawaiian());
-
   const margherita = () => {
     const section = document.createElement('section');
 
@@ -55,7 +54,6 @@ const menu = () => {
     return section;
   };
   div.appendChild(margherita());
-
   const neapolitan = () => {
     const section = document.createElement('section');
 
@@ -70,7 +68,6 @@ const menu = () => {
     return section;
   };
   div.appendChild(neapolitan());
-
   const pepperoni = () => {
     const section = document.createElement('section');
 
@@ -85,7 +82,6 @@ const menu = () => {
     return section;
   };
   div.appendChild(pepperoni());
-
   const quattroFormaggi = () => {
     const section = document.createElement('section');
 

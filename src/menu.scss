@@ -1,12 +1,13 @@
-#assortment {
+div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: row;
 }
-#assortment div {
+section {
   margin: 10px 0;
 }
-#assortment img {
+section img {
   width: 200px;
   height: 200px;
   object-fit: cover;
