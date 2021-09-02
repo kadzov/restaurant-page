@@ -86,7 +86,7 @@ const menu = () => {
     const section = document.createElement('section');
 
     const h2 = document.createElement('h2');
-    h2.textContent = 'QuattroFormaggi';
+    h2.textContent = 'Quattro Formaggi';
     section.appendChild(h2);
 
     const img = new Image();
