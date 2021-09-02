@@ -6,10 +6,10 @@ import Neapolitan from './images/pizza/neapolitan.jpg';
 import Pepperoni from './images/pizza/pepperoni.jpg';
 import QuattroFormaggi from './images/pizza/quattro-formaggi.jpg';
 export { menu };
-// //check other projects from odin and ffc for grid
 
 const menu = () => {
   const div = document.createElement('div');
+  div.id = 'menu';
 
   const capricciosa = () => {
     const section = document.createElement('section');

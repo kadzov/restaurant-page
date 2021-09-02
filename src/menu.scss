@@ -1,8 +1,8 @@
-div {
+#menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
 }
 section {
   margin: 10px 0;
@@ -12,3 +12,4 @@ section img {
   height: 200px;
   object-fit: cover;
 }
+// //check other projects from odin and ffc for grid
