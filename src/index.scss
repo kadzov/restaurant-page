@@ -9,15 +9,15 @@
 }
 body {
   @include flex-center;
+  margin: 20px;
+  color: white;
   background-color: rgb(32, 32, 32);
 }
-#content {
+div {
   @include flex-center;
   flex-direction: column;
   width: 100%;
   max-width: 700px;
-  margin: 20px;
-  color: white;
 }
 #logo {
   max-width: 70%;
