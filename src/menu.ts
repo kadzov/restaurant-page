@@ -14,13 +14,13 @@ const menu = () => {
   const capricciosa = () => {
     const section = document.createElement('section');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Capricciosa';
-    section.appendChild(h2);
-
     const img = new Image();
     img.src = Capricciosa;
     section.appendChild(img);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Capricciosa';
+    section.appendChild(h2);
 
     return section;
   };
@@ -29,13 +29,13 @@ const menu = () => {
   const hawaiian = () => {
     const section = document.createElement('section');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Hawaiian';
-    section.appendChild(h2);
-
     const img = new Image();
     img.src = Hawaiian;
     section.appendChild(img);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Hawaiian';
+    section.appendChild(h2);
 
     return section;
   };
@@ -43,13 +43,13 @@ const menu = () => {
   const margherita = () => {
     const section = document.createElement('section');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Margherita';
-    section.appendChild(h2);
-
     const img = new Image();
     img.src = Margherita;
     section.appendChild(img);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Margherita';
+    section.appendChild(h2);
 
     return section;
   };
@@ -57,13 +57,13 @@ const menu = () => {
   const neapolitan = () => {
     const section = document.createElement('section');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Neapolitan';
-    section.appendChild(h2);
-
     const img = new Image();
     img.src = Neapolitan;
     section.appendChild(img);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Neapolitan';
+    section.appendChild(h2);
 
     return section;
   };
@@ -71,13 +71,13 @@ const menu = () => {
   const pepperoni = () => {
     const section = document.createElement('section');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Pepperoni';
-    section.appendChild(h2);
-
     const img = new Image();
     img.src = Pepperoni;
     section.appendChild(img);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Pepperoni';
+    section.appendChild(h2);
 
     return section;
   };
@@ -85,13 +85,13 @@ const menu = () => {
   const quattroFormaggi = () => {
     const section = document.createElement('section');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Quattro Formaggi';
-    section.appendChild(h2);
-
     const img = new Image();
     img.src = QuattroFormaggi;
     section.appendChild(img);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Quattro Formaggi';
+    section.appendChild(h2);
 
     return section;
   };
