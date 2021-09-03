@@ -1,5 +1,6 @@
 import './header.scss';
 import Logo from './images/logo.jpg';
+
 export { header };
 
 const header = () => {
