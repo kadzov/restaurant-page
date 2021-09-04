@@ -1,8 +1,7 @@
 import './home.scss';
 import Pizzeria from './images/pizzeria.jpg';
-export { home };
 
-const home = () => {
+export default () => {
   const div = document.createElement('div');
   div.id = 'home';
 
