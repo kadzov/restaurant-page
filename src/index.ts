@@ -1,8 +1,8 @@
 import './index.scss';
-import { header } from './header';
-// import { home } from './home';
-import { menu } from './menu';
+import header from './header';
+// import './home.ts';
+import './menu';
 
 document.querySelector('#content').appendChild(header());
 // document.querySelector('#content').appendChild(home());
-document.querySelector('#content').appendChild(menu());
+// document.querySelector('#content').appendChild(menu());

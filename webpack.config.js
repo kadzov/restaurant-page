@@ -6,7 +6,6 @@ const config = {
   entry: './src/index.ts',
   output: { clean: true },
   devServer: { hot: true },
-  resolve: { extensions: ['.ts', '.js'] },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/index.html' }),
     new MiniCssExtractPlugin({ filename: '[contenthash].css' }),

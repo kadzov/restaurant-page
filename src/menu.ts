@@ -5,9 +5,8 @@ import Margherita from './images/pizza/margherita.jpg';
 import Neapolitan from './images/pizza/neapolitan.jpg';
 import Pepperoni from './images/pizza/pepperoni.jpg';
 import QuattroFormaggi from './images/pizza/quattro-formaggi.jpg';
-export { menu };
 
-const menu = () => {
+export default () => {
   const div = document.createElement('div');
   div.id = 'menu';
 

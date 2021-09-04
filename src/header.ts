@@ -1,9 +1,7 @@
 import './header.scss';
 import Logo from './images/logo.jpg';
 
-export { header };
-
-const header = () => {
+export default () => {
   const div = document.createElement('div');
   div.id = 'header';
 
