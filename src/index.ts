@@ -1,6 +1,6 @@
 import './index.scss';
 import header from './header';
-// import home from './home.ts';
+// import home from './home';
 import menu from './menu';
 
 document.querySelector('#content').appendChild(header());
