@@ -62,7 +62,7 @@ export default () => {
 
     const p = document.createElement('p');
     p.textContent =
-      'Truffle olive oil sauce, Wisconsin mozzarella, Prosciutto di Parma, fresh arugula, and fresh mozzarella. ';
+      'Truffle olive oil sauce, Wisconsin mozzarella, Prosciutto di Parma, fresh arugula, and fresh mozzarella.';
     section.appendChild(p);
 
     return section;
