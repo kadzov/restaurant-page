@@ -2,12 +2,11 @@ import './header.scss';
 import Logo from './images/logo.jpg';
 
 export default () => {
-  const div = document.createElement('div');
-  div.id = 'header';
+  const header = document.createElement('header');
 
   const img = new Image();
   img.src = Logo;
-  div.appendChild(img);
+  header.appendChild(img);
 
   const nav = document.createElement('nav');
   const home = document.createElement('a');
@@ -19,7 +18,7 @@ export default () => {
   const location = document.createElement('a');
   location.textContent = 'LOCATION';
   nav.appendChild(location);
-  div.appendChild(nav);
+  header.appendChild(nav);
 
-  return div;
+  return header;
 };
