@@ -7,8 +7,8 @@ import Pepperoni from './images/pizza/pepperoni.jpg';
 import QuattroFormaggi from './images/pizza/quattro-formaggi.jpg';
 
 export default () => {
-  const div = document.createElement('div');
-  div.id = 'menu';
+  const section = document.createElement('section');
+  section.id = 'menu';
 
   const capricciosa = () => {
     const article = document.createElement('article');
@@ -28,7 +28,7 @@ export default () => {
 
     return article;
   };
-  div.appendChild(capricciosa());
+  section.appendChild(capricciosa());
 
   const hawaiian = () => {
     const article = document.createElement('article');
@@ -48,7 +48,7 @@ export default () => {
 
     return article;
   };
-  div.appendChild(hawaiian());
+  section.appendChild(hawaiian());
   const margherita = () => {
     const article = document.createElement('article');
 
@@ -67,7 +67,7 @@ export default () => {
 
     return article;
   };
-  div.appendChild(margherita());
+  section.appendChild(margherita());
   const neapolitan = () => {
     const article = document.createElement('article');
 
@@ -86,7 +86,7 @@ export default () => {
 
     return article;
   };
-  div.appendChild(neapolitan());
+  section.appendChild(neapolitan());
   const pepperoni = () => {
     const article = document.createElement('article');
 
@@ -105,7 +105,7 @@ export default () => {
 
     return article;
   };
-  div.appendChild(pepperoni());
+  section.appendChild(pepperoni());
   const quattroFormaggi = () => {
     const article = document.createElement('article');
 
@@ -124,7 +124,7 @@ export default () => {
 
     return article;
   };
-  div.appendChild(quattroFormaggi());
+  section.appendChild(quattroFormaggi());
 
-  return div;
+  return section;
 };
