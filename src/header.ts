@@ -7,7 +7,6 @@ export default () => {
 
   const img = new Image();
   img.src = Logo;
-  img.id = 'logo';
   div.appendChild(img);
 
   const nav = document.createElement('nav');

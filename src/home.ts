@@ -7,7 +7,6 @@ export default () => {
 
   const img = new Image();
   img.src = Pizzeria;
-  img.id = 'pizzeria';
   div.appendChild(img);
 
   const h1 = document.createElement('h1');
