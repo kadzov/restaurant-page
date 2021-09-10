@@ -49,6 +49,7 @@ export default () => {
     return section2;
   };
   section.appendChild(hawaiian());
+
   const margherita = () => {
     const section2 = document.createElement('section');
 
@@ -68,6 +69,7 @@ export default () => {
     return section2;
   };
   section.appendChild(margherita());
+
   const neapolitan = () => {
     const section2 = document.createElement('section');
 
@@ -87,6 +89,7 @@ export default () => {
     return section2;
   };
   section.appendChild(neapolitan());
+
   const pepperoni = () => {
     const section2 = document.createElement('section');
 
@@ -106,6 +109,7 @@ export default () => {
     return section2;
   };
   section.appendChild(pepperoni());
+
   const quattroFormaggi = () => {
     const section2 = document.createElement('section');
 
