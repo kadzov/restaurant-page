@@ -28,10 +28,6 @@ export default () => {
       const section3 = document.createElement('section');
       section3.className = 'section';
 
-      const i = document.createElement('i');
-      i.className = 'fas fa-map-marker-alt';
-      section3.appendChild(i);
-
       const h2 = document.createElement('h2');
       h2.textContent = 'ADDRESS';
       section3.appendChild(h2);
@@ -48,10 +44,6 @@ export default () => {
       const section3 = document.createElement('section');
       section3.className = 'section';
 
-      const i = document.createElement('i');
-      i.className = 'fas fa-clock';
-      section3.appendChild(i);
-
       const h2 = document.createElement('h2');
       h2.textContent = 'HOURS';
       section3.appendChild(h2);
@@ -67,10 +59,6 @@ export default () => {
     const phone = () => {
       const section3 = document.createElement('section');
       section3.className = 'section';
-
-      const i = document.createElement('i');
-      i.className = 'fas fa-phone';
-      section3.appendChild(i);
 
       const h2 = document.createElement('h2');
       h2.textContent = 'PHONE';
