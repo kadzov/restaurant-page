@@ -22,24 +22,23 @@ export default () => {
 
   const info = () => {
     const section2 = document.createElement('section');
-
-    const phone = () => {
-      const section3 = document.createElement('section');
-
-      const i = document.createElement('i');
-      i.className = 'fas fa-phone';
-      section3.appendChild(i);
-
-      return section3;
-    };
-    section2.appendChild(phone());
+    section2.id = 'info';
 
     const address = () => {
       const section3 = document.createElement('section');
+      section3.className = 'section';
 
       const i = document.createElement('i');
       i.className = 'fas fa-map-marker-alt';
       section3.appendChild(i);
+
+      const h2 = document.createElement('h2');
+      h2.textContent = 'ADDRESS';
+      section3.appendChild(h2);
+
+      const p = document.createElement('p');
+      p.textContent = '10721 Research Blvd.\nAustin, TX 78759';
+      section3.appendChild(p);
 
       return section3;
     };
@@ -47,14 +46,43 @@ export default () => {
 
     const hours = () => {
       const section3 = document.createElement('section');
+      section3.className = 'section';
 
       const i = document.createElement('i');
       i.className = 'fas fa-clock';
       section3.appendChild(i);
 
+      const h2 = document.createElement('h2');
+      h2.textContent = 'HOURS';
+      section3.appendChild(h2);
+
+      const p = document.createElement('p');
+      p.textContent = '(737) 222-5373';
+      section3.appendChild(p);
+
       return section3;
     };
     section2.appendChild(hours());
+
+    const phone = () => {
+      const section3 = document.createElement('section');
+      section3.className = 'section';
+
+      const i = document.createElement('i');
+      i.className = 'fas fa-phone';
+      section3.appendChild(i);
+
+      const h2 = document.createElement('h2');
+      h2.textContent = 'PHONE';
+      section3.appendChild(h2);
+
+      const p = document.createElement('p');
+      p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
+      section3.appendChild(p);
+
+      return section3;
+    };
+    section2.appendChild(phone());
 
     return section2;
   };
