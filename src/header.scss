@@ -1,14 +1,12 @@
 header {
   margin-bottom: 1rem;
   img {
-    width: 100%;
     max-width: 20rem;
     margin: 0 auto 1rem;
   }
   nav {
     display: flex;
     a {
-      text-align: center;
       padding: 2rem 0;
       width: 100%;
       cursor: pointer;
@@ -24,6 +22,7 @@ header {
     }
     & :nth-child(2) {
       background-color: rgb(244, 245, 240);
+      border-radius: 0;
       color: black;
     }
     & :nth-child(3) {

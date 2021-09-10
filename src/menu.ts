@@ -17,9 +17,9 @@ export default () => {
     img.src = Capricciosa;
     section2.appendChild(img);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Capricciosa';
-    section2.appendChild(h2);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Capricciosa';
+    section2.appendChild(h1);
 
     const p = document.createElement('p');
     p.textContent =
@@ -37,9 +37,9 @@ export default () => {
     img.src = Hawaiian;
     section2.appendChild(img);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Hawaiian';
-    section2.appendChild(h2);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Hawaiian';
+    section2.appendChild(h1);
 
     const p = document.createElement('p');
     p.textContent =
@@ -57,9 +57,9 @@ export default () => {
     img.src = Margherita;
     section2.appendChild(img);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Margherita';
-    section2.appendChild(h2);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Margherita';
+    section2.appendChild(h1);
 
     const p = document.createElement('p');
     p.textContent =
@@ -77,9 +77,9 @@ export default () => {
     img.src = Neapolitan;
     section2.appendChild(img);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Neapolitan';
-    section2.appendChild(h2);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Neapolitan';
+    section2.appendChild(h1);
 
     const p = document.createElement('p');
     p.textContent =
@@ -97,9 +97,9 @@ export default () => {
     img.src = Pepperoni;
     section2.appendChild(img);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Pepperoni';
-    section2.appendChild(h2);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Pepperoni';
+    section2.appendChild(h1);
 
     const p = document.createElement('p');
     p.textContent =
@@ -117,9 +117,9 @@ export default () => {
     img.src = QuattroFormaggi;
     section2.appendChild(img);
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Quattro Formaggi';
-    section2.appendChild(h2);
+    const h1 = document.createElement('h1');
+    h1.textContent = 'Quattro Formaggi';
+    section2.appendChild(h1);
 
     const p = document.createElement('p');
     p.textContent =

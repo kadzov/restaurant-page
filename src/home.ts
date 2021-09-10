@@ -10,7 +10,7 @@ export default () => {
   section.appendChild(img);
 
   const h1 = document.createElement('h1');
-  h1.textContent = 'THE BEST NEW YORK STYLE PIZZA AROUND!';
+  h1.textContent = 'The Best New York Style Pizza Around!';
   section.appendChild(h1);
 
   const p = document.createElement('p');

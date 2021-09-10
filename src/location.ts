@@ -28,9 +28,9 @@ export default () => {
       const section3 = document.createElement('section');
       section3.className = 'section';
 
-      const h2 = document.createElement('h2');
-      h2.textContent = 'ADDRESS';
-      section3.appendChild(h2);
+      const h1 = document.createElement('h1');
+      h1.textContent = 'Address';
+      section3.appendChild(h1);
 
       const p = document.createElement('p');
       p.textContent = '10721 Research Blvd.\nAustin, TX 78759';
@@ -44,9 +44,9 @@ export default () => {
       const section3 = document.createElement('section');
       section3.className = 'section';
 
-      const h2 = document.createElement('h2');
-      h2.textContent = 'HOURS';
-      section3.appendChild(h2);
+      const h1 = document.createElement('h1');
+      h1.textContent = 'Hours';
+      section3.appendChild(h1);
 
       const p = document.createElement('p');
       p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
@@ -60,9 +60,9 @@ export default () => {
       const section3 = document.createElement('section');
       section3.className = 'section';
 
-      const h2 = document.createElement('h2');
-      h2.textContent = 'PHONE';
-      section3.appendChild(h2);
+      const h1 = document.createElement('h1');
+      h1.textContent = 'Phone';
+      section3.appendChild(h1);
 
       const p = document.createElement('p');
       p.textContent = '(737) 222-5373';
