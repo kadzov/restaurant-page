@@ -1,13 +1,18 @@
 #location {
+  width: 100%;
   #map {
-    width: 100%;
     height: 30rem;
     border-radius: 0.7rem;
   }
   #info {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    gap: 1rem;
     .section {
+      background-color: rgb(40, 40, 40);
+      border-radius: 0.7rem;
       text-align: center;
-      white-space: pre;
     }
   }
 }

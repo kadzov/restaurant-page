@@ -49,7 +49,7 @@ export default () => {
       section3.appendChild(h2);
 
       const p = document.createElement('p');
-      p.textContent = '(737) 222-5373';
+      p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
       section3.appendChild(p);
 
       return section3;
@@ -65,7 +65,7 @@ export default () => {
       section3.appendChild(h2);
 
       const p = document.createElement('p');
-      p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
+      p.textContent = '(737) 222-5373';
       section3.appendChild(p);
 
       return section3;
