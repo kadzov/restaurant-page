@@ -33,7 +33,7 @@ export default () => {
       section3.appendChild(h1);
 
       const p = document.createElement('p');
-      p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
+      p.textContent = 'Sun–Thurs 11AM–9PM\nFri–Sat 11AM–10PM';
       section3.appendChild(p);
 
       return section3;
@@ -69,7 +69,7 @@ export default () => {
 
     const script = document.createElement('script');
     script.textContent =
-      "mapboxgl.accessToken='pk.eyJ1Ijoia2Fkem92IiwiYSI6ImNrdGN4OGt1azBoYmEycW81c3RhZjUyamYifQ.I_o9iQ7fDYbsrM1try0HwA';var map=new mapboxgl.Map({container:'map',style: 'mapbox://styles/mapbox/streets-v11'});";
+      "const coordinates=[-97.7450452926051,30.399107447250515];mapboxgl.accessToken='pk.eyJ1Ijoia2Fkem92IiwiYSI6ImNrdGN4OGt1azBoYmEycW81c3RhZjUyamYifQ.I_o9iQ7fDYbsrM1try0HwA';var map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/streets-v11',center:coordinates,zoom:16});new mapboxgl.Marker().setLngLat(coordinates).addTo(map);";
     section2.appendChild(script);
 
     return section2;
