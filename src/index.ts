@@ -11,14 +11,12 @@ content.appendChild(home());
 
 buttons.forEach((i) => {
   i.addEventListener('click', () => {
-    content.removeChild(content.childNodes[1]);
+    content.removeChild(content.lastChild);
   });
 });
 
 buttons[0].addEventListener('click', () => {
-  if (!document.querySelector('#home')) {
-    content.appendChild(home());
-  }
+  content.appendChild(home());
 });
 buttons[1].addEventListener('click', () => {
   content.appendChild(menu());
