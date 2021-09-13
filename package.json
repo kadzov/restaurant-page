@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "p": "webpack --env production",
-    "d": "webpack",
+    "build": "webpack --env production",
     "start": "webpack serve --open"
   },
   "repository": {
