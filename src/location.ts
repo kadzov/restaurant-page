@@ -69,7 +69,7 @@ export default () => {
 
     const script = document.createElement('script');
     script.textContent =
-      "const coordinates=[-97.7450452926051,30.399107447250515];mapboxgl.accessToken='pk.eyJ1Ijoia2Fkem92IiwiYSI6ImNrdGN4OGt1azBoYmEycW81c3RhZjUyamYifQ.I_o9iQ7fDYbsrM1try0HwA';var map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/streets-v11',center:coordinates,zoom:16});new mapboxgl.Marker().setLngLat(coordinates).addTo(map);";
+      "mapboxgl.accessToken='pk.eyJ1Ijoia2Fkem92IiwiYSI6ImNrdGN4OGt1azBoYmEycW81c3RhZjUyamYifQ.I_o9iQ7fDYbsrM1try0HwA';var map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/streets-v11',center:[-97.7450452926051,30.399107447250515],zoom:16});new mapboxgl.Marker().setLngLat([-97.7450452926051,30.399107447250515]).addTo(map);";
     section2.appendChild(script);
 
     return section2;
