@@ -11,7 +11,7 @@ export default () => {
   const nav = document.createElement('nav');
 
   const home = document.createElement('a');
-  
+
   home.textContent = 'HOME';
   nav.appendChild(home);
 
@@ -22,7 +22,7 @@ export default () => {
   const location = document.createElement('a');
   location.textContent = 'LOCATION';
   nav.appendChild(location);
-  
+
   header.appendChild(nav);
 
   return header;
