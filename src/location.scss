@@ -1,8 +1,4 @@
 #location {
-  #map {
-    height: 25rem;
-    margin-top: 1rem;
-  }
   #info {
     display: grid;
     gap: 1rem;
@@ -11,6 +7,10 @@
       padding: 0.6rem;
       white-space: pre;
     }
+  }
+  #map {
+    height: 25rem;
+    margin-top: 1rem;
   }
 }
 @media (min-width: 40rem) {
