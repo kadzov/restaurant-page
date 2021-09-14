@@ -33,7 +33,7 @@ export default () => {
       section3.appendChild(h1);
 
       const p = document.createElement('p');
-      p.textContent = 'Sun–Thurs 11AM–9PM\nFri–Sat 11AM–10PM';
+      p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
       section3.appendChild(p);
 
       return section3;
