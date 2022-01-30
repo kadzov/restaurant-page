@@ -1,80 +1,70 @@
 import './location.scss';
 
 export default () => {
-  const section = document.createElement('section');
-  section.id = 'location';
+  const location = document.createElement('section');
+  location.id = 'location';
 
-  const info = () => {
-    const section2 = document.createElement('section');
-    section2.id = 'info';
+  {
+    const info = document.createElement('section');
+    location.append(info);
+    info.id = 'info';
 
-    const address = () => {
-      const section3 = document.createElement('section');
-      section3.className = 'section';
+    {
+      const section = document.createElement('section');
+      info.append(section);
+      section.className = 'section';
 
       const h1 = document.createElement('h1');
       h1.textContent = 'Address';
-      section3.appendChild(h1);
+      section.appendChild(h1);
 
       const p = document.createElement('p');
       p.textContent = '10721 Research Blvd.\nAustin, TX 78759';
-      section3.appendChild(p);
+      section.appendChild(p);
+    }
 
-      return section3;
-    };
-    section2.appendChild(address());
-
-    const hours = () => {
-      const section3 = document.createElement('section');
-      section3.className = 'section';
+    {
+      const section = document.createElement('section');
+      info.append(section);
+      section.className = 'section';
 
       const h1 = document.createElement('h1');
       h1.textContent = 'Hours';
-      section3.appendChild(h1);
+      section.appendChild(h1);
 
       const p = document.createElement('p');
       p.textContent = 'Sun–Thurs 11am–9pm\nFri–Sat 11am–10pm';
-      section3.appendChild(p);
+      section.appendChild(p);
+    }
 
-      return section3;
-    };
-    section2.appendChild(hours());
-
-    const phone = () => {
-      const section3 = document.createElement('section');
-      section3.className = 'section';
+    {
+      const section = document.createElement('section');
+      info.append(section);
+      section.className = 'section';
 
       const h1 = document.createElement('h1');
       h1.textContent = 'Phone';
-      section3.appendChild(h1);
+      section.appendChild(h1);
 
       const p = document.createElement('p');
       p.textContent = '(737) 222-5373';
-      section3.appendChild(p);
+      section.appendChild(p);
+    }
+  }
 
-      return section3;
-    };
-    section2.appendChild(phone());
+  {
+    const section = document.createElement('section');
+    location.append(section);
 
-    return section2;
-  };
-  section.appendChild(info());
-
-  const map = () => {
-    const section2 = document.createElement('section');
-
-    const div = document.createElement('div');
-    div.id = 'map';
-    section2.appendChild(div);
+    const map = document.createElement('div');
+    map.id = 'map';
+    section.appendChild(map);
 
     const script = document.createElement('script');
     script.textContent =
       "mapboxgl.accessToken='pk.eyJ1Ijoia2Fkem92IiwiYSI6ImNrdGN4OGt1azBoYmEycW81c3RhZjUyamYifQ.I_o9iQ7fDYbsrM1try0HwA';var map=new mapboxgl.Map({container:'map',style:'mapbox://styles/mapbox/streets-v11',center:[-97.7450452926051,30.399107447250515],zoom:16});new mapboxgl.Marker().setLngLat([-97.7450452926051,30.399107447250515]).addTo(map);";
-    section2.appendChild(script);
+    section.appendChild(script);
+  }
 
-    return section2;
-  };
-  section.appendChild(map());
-
-  return section;
+  return location;
 };
